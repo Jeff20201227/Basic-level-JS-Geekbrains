@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 dz-3</title>
+</head>
+
+<body>
+
+    <script>
+        'use strict';
+
+        function Positiv() {
+            let a = parseInt(Math.random() * 100);
+            let b = parseInt(Math.random() * 100);
+
+            let minus = a - b;
+            alert("При а - b получаем число " + minus);
+        }
+
+        Positiv();
+
+        function multiplication() {
+            let x = parseInt(Math.random() * 100);
+            let a = -Math.abs(x);
+            let y = parseInt(Math.random() * 100);
+            let b = -Math.abs(y);
+
+            let proizvedenie = a * b;
+            alert("При а * b получаем число " + proizvedenie);
+        }
+
+        multiplication();
+
+        function Summa() {
+            let x = parseInt(Math.random() * 100);
+            let a = -Math.abs(x);
+            let b = parseInt(Math.random() * 100);
+
+            let sum = a + b;
+            alert("При а + b получаем число " + sum);
+        }
+
+        Summa();
+    </script>
+</body>
+
+</html>
