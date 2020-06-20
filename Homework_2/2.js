@@ -5,12 +5,8 @@
  * @param {number} b - Второе число, которое будет складываться в функции
  * @returns {number} - Вернёт число, полученное при сложении двух чисел.
  */
-function summa() {
-    let a = number_1;
-    let b = number_2;
-
-    let result = a + b;
-    return result;
+function summa(a, b) {
+    return a + b;
 }
 
 /**
@@ -19,12 +15,8 @@ function summa() {
  * @param {number} b - Второе число, которое будет вычитаться в функции
  * @returns {number} - Вернёт число, полученное при разности двух чисел.
  */
-function minus() {
-    let a = number_1;
-    let b = number_2;
-
-    let result = a - b;
-    return result;
+function minus(a, b) {
+    return a - b;
 }
 
 /**
@@ -33,12 +25,8 @@ function minus() {
  * @param {number} b - Второе число, которое будет умножаться в функции
  * @returns {number} - Вернёт число, полученное при умножении двух чисел.
  */
-function multiplication() {
-    let a = number_1;
-    let b = number_2;
-
-    let result = a * b;
-    return result;
+function multiplication(a, b) {
+    return a * b;
 }
 
 /**
@@ -47,22 +35,32 @@ function multiplication() {
  * @param {number} b - Число, на которое будет делиться первое число в функции
  * @returns {number} - Вернёт число, полученное при делении двух чисел.
  */
-function division() {
-    let a = number_1;
-    let b = number_2;
-
-    let result = a / b;
-    return result;
+function division(a, b) {
+    return a / b;
 }
 
 
-let number_1 = parseInt(prompt("Введите первое число"));
-let number_2 = parseInt(prompt("Введите второе число"));
-summa();
-alert("Сумма двух чисел равна: " + summa());
-minus();
-alert("Разность двух чисел равна: " + minus());
-multiplication();
-alert("Произведение двух чисел равно: " + multiplication());
-division();
-alert("Деление двух чисел равно: " + division());
+let a = parseInt(prompt("Введите первое число"));
+let b = parseInt(prompt("Введите второе число"));
+let c = prompt("Введите одно из математических действий: " + " '+' " + " '-' " + " '*' " + " '/'.")
+
+function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+        case "+":
+            return summa(arg1, arg2);
+        case "-":
+            return minus(arg1, arg2);
+        case "*":
+            return multiplication(arg1, arg2);
+        case "/":
+            return division(arg1, arg2);
+        default:
+            throw new Error("Операция " + operation + " не предусмотрена.");
+    }
+}
+
+alert(mathOperation(a, b, c));
+/*alert("Сумма двух чисел равна: " + mathOperation(a, b, "+"));
+alert("Разность двух чисел равна: " + mathOperation(a, b, "-"));
+alert("Произведение двух чисел равно: " + mathOperation(a, b, "*"));
+alert("Деление двух чисел равно: " + mathOperation(a, b, ""));*/
