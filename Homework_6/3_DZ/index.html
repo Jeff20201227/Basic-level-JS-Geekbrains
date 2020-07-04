@@ -66,40 +66,27 @@
                     <section class="header_cart">
                         <div>
                             <div class="cart_fon">
-                                <div class="cart_product_fon">
-                                    <img src="img/cart_1_fon.png" alt="Фото продукта" class="cart_img_fon">
-                                    <ul class="position_text_3">
-                                        <li class="cart_text_fon_1 cart_product_text_position_h_1">Rebox Zane</li>
-                                        <li><span class="cart_fon_2 cart_product_text_position_h_1"><i
-                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                    class="fas fa-star"></i></span></li>
-                                        <li><span class="cart_text_fon_3 cart_product_text_position_h_1">1&nbsp;x
-                                                $250</span></li>
-                                        <li><span class="cart_text_4 cart_product_text_position_h_2"><a
-                                                    class="cart_text_4" href="#"><i
-                                                        class="far fa-window-close color_cancel"></i></a></span></li>
-                                    </ul>
-                                </div>
-                                <div class="borders_cart_2"></div>
-                                <div class="cart_product_fon">
-                                    <img src="img/cart_2_fon.png" alt="Фото продукта" class="cart_img_fon">
-                                    <ul class="position_text_3">
-                                        <li class="cart_text_fon_1 cart_product_text_position_h_1">Rebox Zane</li>
-                                        <li><span class="cart_fon_2 cart_product_text_position_h_1"><i
-                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                    class="fas fa-star"></i></span></li>
-                                        <li><span class="cart_text_fon_3 cart_product_text_position_h_1">1&nbsp;x
-                                                $250</span></li>
-                                        <li><span class="cart_text_4 cart_product_text_position_h_2"><a
-                                                    class="cart_text_4" href="#"><i
-                                                        class="far fa-window-close color_cancel"></i></a></span></li>
-                                    </ul>
-                                </div>
-                                <div class="borders_cart_2"></div>
-                                <h3 class="cart_product_h3"><span class="h3_1">TOTAL</span><span
-                                        class="h3_1">$500.00</span></h3>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Имя</th>
+                                            <th scope="col">Цена</th>
+                                            <th scope="col">Количество</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th colspan="2" scope="row">Итого:</th>
+                                            <td colspan="3">
+                                                <span class="total">0</span>
+                                                <i class="fas fa-ruble-sign"></i>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
                                 <div><a href="checkout.html"><span
                                             class="cart_product_fon_button_1 cart_product_fon_button_1_position_1 cart_fon_3">Checkout</span></a>
                                 </div>
@@ -199,77 +186,89 @@
         </div>
 
         <section class="product-box center">
-            <div class="product">
-                <a href="html/product.html"><img class="product_img" src="img/catalog_1.png" alt="Товар 1"></a>
-                <div class="product_content">
-                    <a href="html/product.html" class="product_name">Mango People T-shirt</a>
-                    <p class="product_price">$52.00</p>
+            <div class="one">
+                <div class="product">
+                    <a href="html/product.html"><img class="product_img" src="img/catalog_1.png" alt="Товар 1"></a>
+                    <div class="product_content">
+                        <a href="html/product.html" class="product_name">Mango People T-shirt</a>
+                        <p class="product_price">$52.00</p>
+                    </div>
+                    <a href="#" class="product_add" product_price_2="52" product_name_2="Mango People T-shirt"
+                        product_id="1"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
+                        Add to&nbsp;Cart</a>
                 </div>
-                <a href="#" class="product_add"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
-                    Add to&nbsp;Cart</a>
+                <div class="product">
+                    <a href="html/product.html"><img class="product_img" src="img/catalog_2.png" alt="Товар 2"></a>
+                    <div class="product_content">
+                        <a href="html/product.html" class="product_name">Mango People T-shirt</a>
+                        <p class="product_price">$52.00</p>
+                    </div>
+                    <a href="#" class="product_add" product_price_2="52" product_name_2="Mango People T-shirt"
+                        product_id="2"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
+                        Add to&nbsp;Cart</a>
+                </div>
+                <div class="product">
+                    <a href="html/product.html"><img class="product_img" src="img/catalog_3.png" alt="Товар 3"></a>
+                    <div class="product_content">
+                        <a href="html/product.html" class="product_name">Mango People T-shirt</a>
+                        <p class="product_price">$52.00</p>
+                    </div>
+                    <a href="#" class="product_add" product_price_2="52" product_name_2="Mango People T-shirt"
+                        product_id="3"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
+                        Add to&nbsp;Cart</a>
+                </div>
+                <div class="product">
+                    <a href="html/product.html"><img class="product_img" src="img/catalog_4.png" alt="Товар 4"></a>
+                    <div class="product_content">
+                        <a href="html/product.html" class="product_name">Mango People T-shirt</a>
+                        <p class="product_price">$52.00</p>
+                    </div>
+                    <a href="#" class="product_add" product_price_2="52" product_name_2="Mango People T-shirt"
+                        product_id="4"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
+                        Add to&nbsp;Cart</a>
+                </div>
             </div>
-            <div class="product">
-                <a href="html/product.html"><img class="product_img" src="img/catalog_2.png" alt="Товар 2"></a>
-                <div class="product_content">
-                    <a href="html/product.html" class="product_name">Mango People T-shirt</a>
-                    <p class="product_price">$52.00</p>
+            <div class="two">
+                <div class="product">
+                    <a href="html/product.html"><img class="product_img" src="img/catalog_5.png" alt="Товар 5"></a>
+                    <div class="product_content">
+                        <a href="html/product.html" class="product_name">Mango People T-shirt</a>
+                        <p class="product_price">$52.00</p>
+                    </div>
+                    <a href="#" class="product_add" product_price_2="52" product_name_2="Mango People T-shirt"
+                        product_id="5"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
+                        Add to&nbsp;Cart</a>
                 </div>
-                <a href="#" class="product_add"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
-                    Add to&nbsp;Cart</a>
-            </div>
-            <div class="product">
-                <a href="html/product.html"><img class="product_img" src="img/catalog_3.png" alt="Товар 3"></a>
-                <div class="product_content">
-                    <a href="html/product.html" class="product_name">Mango People T-shirt</a>
-                    <p class="product_price">$52.00</p>
+                <div class="product">
+                    <a href="html/product.html"><img class="product_img" src="img/catalog_6.png" alt="Товар 6"></a>
+                    <div class="product_content">
+                        <a href="html/product.html" class="product_name">Mango People T-shirt</a>
+                        <p class="product_price">$52.00</p>
+                    </div>
+                    <a href="#" class="product_add" product_price_2="52" product_name_2="Mango People T-shirt"
+                        product_id="6"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
+                        Add to&nbsp;Cart</a>
                 </div>
-                <a href="#" class="product_add"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
-                    Add to&nbsp;Cart</a>
-            </div>
-            <div class="product">
-                <a href="html/product.html"><img class="product_img" src="img/catalog_4.png" alt="Товар 4"></a>
-                <div class="product_content">
-                    <a href="html/product.html" class="product_name">Mango People T-shirt</a>
-                    <p class="product_price">$52.00</p>
+                <div class="product">
+                    <a href="html/product.html"><img class="product_img" src="img/catalog_7.png" alt="Товар 7"></a>
+                    <div class="product_content">
+                        <a href="html/product.html" class="product_name">Mango People T-shirt</a>
+                        <p class="product_price">$52.00</p>
+                    </div>
+                    <a href="#" class="product_add" product_price_2="52" product_name_2="Mango People T-shirt"
+                        product_id="7"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
+                        Add to&nbsp;Cart</a>
                 </div>
-                <a href="#" class="product_add"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
-                    Add to&nbsp;Cart</a>
-            </div>
-            <div class="product">
-                <a href="html/product.html"><img class="product_img" src="img/catalog_5.png" alt="Товар 5"></a>
-                <div class="product_content">
-                    <a href="html/product.html" class="product_name">Mango People T-shirt</a>
-                    <p class="product_price">$52.00</p>
+                <div class="product">
+                    <a href="html/product.html"><img class="product_img" src="img/catalog_8.png" alt="Товар 8"></a>
+                    <div class="product_content">
+                        <a href="html/product.html" class="product_name">Mango People T-shirt</a>
+                        <p class="product_price">$52.00</p>
+                    </div>
+                    <a href="#" class="product_add" product_price_2="52" product_name_2="Mango People T-shirt"
+                        product_id="8"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
+                        Add to&nbsp;Cart</a>
                 </div>
-                <a href="#" class="product_add"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
-                    Add to&nbsp;Cart</a>
-            </div>
-            <div class="product">
-                <a href="html/product.html"><img class="product_img" src="img/catalog_6.png" alt="Товар 6"></a>
-                <div class="product_content">
-                    <a href="html/product.html" class="product_name">Mango People T-shirt</a>
-                    <p class="product_price">$52.00</p>
-                </div>
-                <a href="#" class="product_add"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
-                    Add to&nbsp;Cart</a>
-            </div>
-            <div class="product">
-                <a href="html/product.html"><img class="product_img" src="img/catalog_7.png" alt="Товар 7"></a>
-                <div class="product_content">
-                    <a href="html/product.html" class="product_name">Mango People T-shirt</a>
-                    <p class="product_price">$52.00</p>
-                </div>
-                <a href="#" class="product_add"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
-                    Add to&nbsp;Cart</a>
-            </div>
-            <div class="product">
-                <a href="html/product.html"><img class="product_img" src="img/catalog_8.png" alt="Товар 8"></a>
-                <div class="product_content">
-                    <a href="html/product.html" class="product_name">Mango People T-shirt</a>
-                    <p class="product_price">$52.00</p>
-                </div>
-                <a href="#" class="product_add"> <img class="product_cart" src="img/cart_white.png" alt="Корзина">
-                    Add to&nbsp;Cart</a>
             </div>
         </section>
 

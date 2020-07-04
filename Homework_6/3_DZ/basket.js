@@ -2,11 +2,11 @@
 
 let product_add = document.querySelectorAll('.product_add');
 //берем все кнопки "В корзину" и слушаем клики по ним
-product_add.forEach(function (a) {
-    a.addEventListener('click', function (event) {
+product_add.forEach(function (btn) {
+    btn.addEventListener('click', function (event) {
         let id = event.srcElement.dataset.id;
-        let price = event.srcElement.dataset.price;
-        let name = event.srcElement.dataset.name;
+        let price = event.srcElement.dataset.price_2;
+        let name = event.srcElement.dataset.name_2;
         basket.addProduct({
             id: id,
             price: price,

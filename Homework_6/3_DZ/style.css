@@ -88,6 +88,18 @@
           filter: brightness(40%);
 }
 
+.one {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.two {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
 .product_aside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2249,6 +2261,8 @@ p.center_2 {
   margin-bottom: 46px;
   -webkit-transition: all .2s;
   transition: all .2s;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .product:hover {
